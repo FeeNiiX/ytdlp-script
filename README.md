@@ -1,14 +1,12 @@
 # ytdlp-script
 
-You need [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-
-and [ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest)
+You need [yt-dlp](https://github.com/yt-dlp/yt-dlp) and [ffmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest)
 
 You can make a directory to put Download.bat, yt.dlp.exe and ffmpeg.exe
 
 Or you can set it as a system variable
 
-### How
+### How?
 
 its in portuguese but you should figure it out where all of this is
 

@@ -16,12 +16,12 @@ echo.
 echo ------------------------
 set /p format=Choice:
 echo.
-if %format% == 1 (set format=-f 22/18)
-if %format% == 2 (set format=-f bv[ext=mp4]+ba[ext=m4a]/b[ext=mp4])
+if %format% == 1 (set format=22/18)
+if %format% == 2 (set format=bv[ext=mp4]+ba[ext=m4a]/b[ext=mp4])
 if %format% == 3 (set format=)
-if %format% == 4 (set format=-f ba[ext=m4a])
-if %format% == 5 (set format=-f -)
+if %format% == 4 (set format=ba[ext=m4a])
+if %format% == 5 (set format=-)
 if %format% == 0 (goto start)
-yt-dlp --embed-metadata --embed-thumbnail %format% %link%
+yt-dlp --embed-metadata --embed-thumbnail -f %format% %link%
 echo.
 goto start

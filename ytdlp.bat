@@ -22,6 +22,6 @@ if %format% == 3 (set format=)
 if %format% == 4 (set format=-f ba[ext=m4a])
 if %format% == 5 (set format=-f -)
 if %format% == 0 (goto start)
-yt-dlp --embed-metadata --embed-thumbnail %sponsor% %format% %link%
+yt-dlp --embed-metadata --embed-thumbnail %format% %link%
 echo.
 goto start

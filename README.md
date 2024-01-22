@@ -8,7 +8,7 @@ Or you can set it as a system variable
 
 ### How?
 
-Its in portuguese but you should figure it out where all of this is
+Its in Brazilian Portuguese but you should figure it out where all of this is
 
 Since you are smart enough to know what yt-dlp is.
 
@@ -24,7 +24,7 @@ Here its the path of where my executables are, they will probably be in your dow
 
 However if you dont want a mess in your downloads folder you can create a folder anywhere and put them in
 
-Them set this folder to your environment variable and [Read This](#tip)
+Them set this folder to your environment variable and [Read Tip](#tip)
 
 ### Why?
 
@@ -46,19 +46,19 @@ And this goes back to what i've said, if the ffmpeg executable is a environment 
 
 ### Tip
 
-If you want to set your output folder for the videos you download
+* **If you want to set your output folder for the videos you download**
 
-I dont know if this creates the folder or not but it will save in a folder IN THE SAME DIRECTORY yt-dlp.exe is in
+It will save in `Folder` IN THE DIRECTORY `yt-dlp.exe` is in. Be careful with the environment variable.
 
-`yt-dlp -P folder\videos\ --embed-metadata --embed-thumbnail %spbl%%format%%link%`
+`yt-dlp -P Folder\ --embed-metadata --embed-thumbnail %spbl%%format%%link%`
 
-If your folder isnt in the same directory of yt-dlp.exe
+If you dont want it to be in the same directory of yt-dlp.exe you can always write the full path
 
 `yt-dlp -P C:\Full\Path\To\Videos\ --embed-metadata --embed-thumbnail %spbl%%format%%link%`
 
-If its one folder behind, it works just like cmd CD command. "cd .." goes back "cd ." is the current directory
+If its one folder behind and you dont want to write the full path. You dont need to, just use
 
-`yt-dlp -P ..\Videos --embed-metadata --embed-thumbnail %spbl%%format%%link%`
+`yt-dlp -P ..\ --embed-metadata --embed-thumbnail %spbl%%format%%link%`
 
 And it accepts variables too
 

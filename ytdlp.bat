@@ -42,4 +42,5 @@ if %errorlevel% == 6 (
 if %errorlevel% == 7 goto start
 yt-dlp --embed-metadata --embed-thumbnail %spbl%%format%%link%
 echo.
+set link=
 goto start
